@@ -50,13 +50,19 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--flannel-backend none --token 
 ```
 curl -sfL https://get.k3s.io | sh -s - --flannel-backend none --token 12345
 ```
-[INFO]  Creating /usr/local/bin/kubectl symlink to k3s
-[INFO]  Creating /usr/local/bin/crictl symlink to k3s
-[INFO]  Creating /usr/local/bin/ctr symlink to k3s
-[INFO]  Creating killall script /usr/local/bin/k3s-killall.sh
-[INFO]  Creating uninstall script /usr/local/bin/k3s-uninstall.sh
-[INFO]  env: Creating environment file /etc/systemd/system/k3s.service.env
-[INFO]  systemd: Creating service file /etc/systemd/system/k3s.service
+> [INFO]  Creating /usr/local/bin/kubectl symlink to k3s
+
+> [INFO]  Creating /usr/local/bin/crictl symlink to k3s
+
+> [INFO]  Creating /usr/local/bin/ctr symlink to k3s
+
+> [INFO]  Creating killall script /usr/local/bin/k3s-killall.sh
+
+> [INFO]  Creating uninstall script /usr/local/bin/k3s-uninstall.sh
+
+> [INFO]  env: Creating environment file /etc/systemd/system/k3s.service.env
+
+> [INFO]  systemd: Creating service file /etc/systemd/system/k3s.service
 ```
 mkdir ~/.kube 2> /dev/null
 sudo k3s kubectl config view --raw > "$KUBECONFIG"
